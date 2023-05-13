@@ -51,5 +51,7 @@ for count, fetched_data in enumerate(earthquakes, start=1):
         }
 
 
-with open("try.json", "w", encoding="utf-8") as file:
-    json.dump(to_json, file, ensure_ascii=False, indent=2)
+
+
+with open("earthquakes.json", "w", encoding="utf-8") as file:
+    json.dump(to_json, file, ensure_ascii=False, indent=4)
